@@ -26,7 +26,7 @@
             $.each(result, function(index, item) {
                 if(item.bibliography.author.name.toLowerCase().includes(search)) {
                     $("#output").append(item.bibliography.author.name + " - Death Date: " +
-                            item.bibliography.author.death + "<br>") ;
+                            item.bibliography.author.death +  " - Book titles: " + item.bibliography.title+ "<br>") ;
                 }
             });
         });
