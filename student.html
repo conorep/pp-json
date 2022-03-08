@@ -17,7 +17,7 @@
         $("#output").html("");
         $.getJSON("classics.json", function(result) {
             $.each(result, function(index, item) {
-                $("#output").append(bibliography.author.name);
+                $("#output").append(item.bibliography.author.name);
             });
         });
     });
