@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +15,9 @@
 <script>
     $("#get").on("click", function(){
         $("#output").html("");
-        $.getJSON("student.json", function(result) {
+        $.getJSON("classics.json", function(result) {
             $.each(result, function(index, item) {
-                $("#output").append(bibliography.author.name "<br>");
+                $("#output").append(bibliography.author.name);
             });
         });
     });
