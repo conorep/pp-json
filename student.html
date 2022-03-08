@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Using jQuery Ajax with JSON</title>
+</head>
+<body>
+
+<button id="get">Get JSON Data</button>
+
+<div id="output"></div>
+
+<script src="//code.jquery.com/jquery.js"></script>
+
+<script>
+    $("#get").on("click", function(){
+        $("#output").html("");
+        $.getJSON("student.json", function(result) {
+            $.each(result, function(index, item) {
+                $("#output").append(bibliography.author.name "<br>");
+            });
+        });
+    });
+</script>
+</body>
+</html>
